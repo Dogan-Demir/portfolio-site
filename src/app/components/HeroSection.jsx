@@ -10,16 +10,16 @@ import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
     return (
-        <section>
-            <div className="grid grid-cols-1 sm:grid-cols-12">
+        <section className="w-full">
+            <div className="grid grid-cols-1 sm:grid-cols-12 gap-4 max-w-6xl mx-auto">
                 <div className='col-span-7 place-self-center text-center sm:text-left'>
                     <h1 className='text-white mb-4 text-4xl sm:text-5xllg:text-6xl font-extrabold'>
                         <span className=" font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-500 to-white
 ">
-                        Hello, I'm{" "}
+                            Hello, I'm{" "}
                         </span>
                         <br />
-                            <TypeAnimation
+                        <TypeAnimation
                             sequence={[
                                 'Doğan Demir',          // first thing typed
                                 1500,             // pause 1.5s
@@ -34,7 +34,7 @@ const HeroSection = () => {
                             deletionSpeed={30} // speed of deleting text
                             repeat={Infinity}   // loop forever
                             style={{ fontWeight: 'bold' }} // optional styling
-                            />
+                        />
 
                     </h1>
                     <p className='text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl'>
@@ -42,10 +42,10 @@ const HeroSection = () => {
                     </p>
                     <div>
                         <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-blue-900 to-blue-600 text-white font-semibold shadow-lg hover:scale-105 hover:from-blue-800 hover:to-blue-500 transition transform duration-300'>
-                        Hire Me
+                            Hire Me
                         </button>
 
-                        <button 
+                        <button
                             onClick={() => {
                                 const projectsSection = document.querySelector('#projects');
                                 if (projectsSection) {
@@ -54,7 +54,7 @@ const HeroSection = () => {
                             }}
                             className='px-6 py-3 w-full sm:w-fit rounded-full border border-white text-white bg-transparent shadow-lg hover:scale-105 hover:bg-gradient-to-r hover:from-blue-900 hover:to-blue-600 hover:text-white transition transform duration-300 mt-3 cursor-pointer'
                         >
-                        View My Work
+                            View My Work
                         </button>
 
 
