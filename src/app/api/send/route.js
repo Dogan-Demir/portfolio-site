@@ -30,8 +30,8 @@ export async function POST(req) {
       });
 
       const data = await resend.emails.send({
-        from: "Portfolio Website <onboarding@resend.dev>",
-        to: ["dogandemir2004@gmail.com"],  // Your verified email address
+        from: "Contact Form <contact@pulsedevelopment.uk>",
+        to: ["dogandemir2004@gmail.com"],
         reply_to: email,
         subject: subject,
         html: `
