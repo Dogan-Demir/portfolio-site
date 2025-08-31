@@ -16,11 +16,11 @@ export default function Home() {
         <div id="about" className="min-h-screen flex items-center justify-center w-full">
           <AboutSection />
         </div>
-        <div id="projects" className="min-h-screen flex items-center justify-center w-full">
+                <div id="projects" className="min-h-screen flex items-center justify-center w-full">
           <ProjectsSection />
         </div>
-        <div id="email" className="min-h-screen flex items-center">
-          <EmailSection/>
+        <div id="contact" className="min-h-screen flex items-center justify-center w-full">
+          <EmailSection />
         </div>
       </div>
     </main>
